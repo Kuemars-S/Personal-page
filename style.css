@@ -23,7 +23,7 @@ h1 {
     margin: 0;
 }
 
-#about {
+#about img, #about p {
     display: flex;
 }
 
