@@ -27,7 +27,7 @@
    }
    .box2, .box3 {
     justify-content: end;
-    height: 198px;
+    height: 200px;
    }
    .box2 {
     flex-basis: 232px;
@@ -37,6 +37,7 @@
    }
    .box4, .box5, .box6 {
     flex-basis: 400px;
+    height: 199px;
     justify-content: space-between
    }
    .box4 {
