@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://cdn.imgchest.com/files/j7mmcrexg76.png);
+    background-repeat: no-repeat;
+    max-width: 1143px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+.container {
+    display: grid;
+    grid-template-rows: 35px 80px 101px 530px;
+    grid-template-columns: 100px 390px 460px 220px;
+    grid-template-areas: 
+    "boxone boxone boxone boxone"
+    "boxtwo boxfive boxfive boxsix"
+    "boxthree boxthree boxthree boxthree"
+    "boxfour boxfour boxseven boxseven";
+}
+.box1 {
+    grid-area: boxone;
+}
+.box2 {
+    grid-area: boxtwo;
+}
+.box3 {
+    grid-area: boxthree;
+}
+.box4 {
+    grid-area: boxfour;
+}
+.box5 {
+    grid-area: boxfive;
+}
+.box6 {
+    grid-area: boxsix;
+}
+.box7 {
+    grid-area: boxseven;
+}
