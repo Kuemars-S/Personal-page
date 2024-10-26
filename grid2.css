@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -16,8 +17,8 @@ body {
 }
 .container {
     display: grid;
-    grid-template-rows: minmax(10px, 35px) minmax(30px, 80px) minmax(50px, 101px) minmax(100px, 530px);
-    grid-template-columns: minmax(10px, 100px) minmax(200px, 390px) minmax(200px, 500px) minmax(10px, 220px);
+    grid-template-rows: minmax(30px, 35px) minmax(40px, 80px) minmax(80px, 101px) minmax(300px, 530px);
+    grid-template-columns: minmax(10px, 100px) minmax(200px,390px) minmax(200px, 460px) minmax(0px, 220px);
     height: auto;
     grid-template-areas: 
     "boxone boxone boxone boxone"
@@ -39,12 +40,9 @@ body {
 }
 .box5 {
     grid-area: boxfive;
-    background-color:#034ea1;
     display: flex;
+    background-color:#034ea1;
     align-items: center;
-    justify-content: center;
-    padding-top: 2px;
-    padding-left: 50px;
     color: white;
 }
 .box6 {
@@ -54,12 +52,19 @@ body {
     grid-area: boxseven;
 }
 .box5 > ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    font-size: 14px;
-    gap: 10px;
+    align-items: center;
+    font-size: 13px;
     list-style-type: none;
+    font-family: "Montserrat";
+    padding-top: 2px;
+    font-weight: bold;
     flex-wrap: wrap;
+    justify-content: center;
 }
 @media (max-width: 500px){
     .container {
@@ -75,6 +80,24 @@ body {
         "boxseven";
     }
 }
-.box5 > ul:not(.space){
-    font-weight: bold;
+.JSCMAM {
+    flex-basis: 338px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 35px;
+}
+.BISHKEK {
+    flex-basis: 92px;
+}
+.OSH {
+    flex-basis: 67px;
+}
+.ISSYK-KUL {
+    flex-basis: 103px;
+}
+.KARAKOL {
+    flex-basis: 98px;
+}
+.BATKEN {
+    flex-basis: 139px;
 }
