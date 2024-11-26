@@ -151,8 +151,7 @@ body {
 
 .box1 > .logo {
     flex-basis: 280px;
-    display: flex;
-    align-items: start;
+    padding-left: 50px;
 }
 
 .product-column-one, .product-column-two, .product-column-three {
