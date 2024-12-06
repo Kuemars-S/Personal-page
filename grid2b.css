@@ -125,6 +125,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 6px;
 }
 .box1-logo img {
     font-size: medium !important;
@@ -189,9 +190,6 @@ body {
     width: 99%;
     justify-content: space-evenly;
     color: #034ea1;
-}
-.box4 .flex-layout-2 div {
-    border: 1px solid black;
 }
 
 .box4 .flex-layout-2 > .item-two {

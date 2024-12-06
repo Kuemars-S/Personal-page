@@ -24,9 +24,9 @@ body {
     grid-template-areas: 
     "boxone boxone"
     "boxfive boxeigth"
-    "boxtwo boxthree"
     "boxtwo boxfour"
-    "boxseven boxfour"
+    "boxtwo boxthree"
+    "boxseven boxthree"
     "boxseven boxsix"
     ;
 }
@@ -35,6 +35,13 @@ body {
     display: flex;
     background-color: #034ea1;
     color: orange;
+    font-size: 12px;
+    align-items: center;
+}
+.box1 .box1-logo {
+    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
 }
 .box2 {
     grid-area: boxtwo;
@@ -44,14 +51,71 @@ body {
 .box3 {
     grid-area: boxthree;
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    justify-content: space-between;
+}
+.News-section {
+    flex-basis: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.News-section img {
+    max-width: 110px;
+    max-height: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 7px;
+    font-size: 16px;
+}
+.News-section > .product-column-one .news-one-date, .news-two-date, .news-three-date{
+    padding-top: 9px;
+    padding-left: 7px;
+    font-size: 11px;
+    color: gray;
+}
+.News-section > .product-column-one .news-one-title, .news-two-title, .news-three-title {
+    font-size: 13px;
+    font-weight: bolder;
+    padding-top: 7px;
+    padding-left: 6px;
+    color: #034ea1;
+    font-family: "Montserrat";
+    line-height: 20px;
+}
+.News-section .product-column-three {
+    display: flex;
+    justify-content: start;
+}
+.News-section .product-column-two {
+    display: flex;
+    justify-content: start;
+}
+.News-section .product-column-one {
+    display: flex;
+    justify-content: start;
+}
+.news-logo {
+    flex-basis: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.news-logo p {
+    border-bottom: 3px solid #034ea1;
+    color: #034ea1 !important;
+    font-family: "Montserrat";
 }
 .box4 {
     grid-area: boxfour;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: bolder;
     color: black !important;
 }
 .box5 {
@@ -81,13 +145,14 @@ body {
     background-size: cover;
     background-position: center;
     background-color: #42423e;
+    flex-shrink: 1;
 }
 .box5 > ul {
     background-color:#034ea1;
     color: white;
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 100%;
     height: 540px;
     display: flex;
     flex-direction: column;
@@ -158,39 +223,77 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    background-image: url(https://unsplash.it/300/200?1);
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
-    background-color: #42423e;
-    color: aliceblue;
+    color: black;
 }
 
 .flex-layout-2 {
     display: flex;
     width: 100%;
-    height: 500px;
-    gap: 30px;
-    padding: 40px 10px;
-    padding-bottom: 100px;
-    justify-content: space-between;
-    align-items: end;
+    /* height: 500px; */
+    /* padding: 40px 10px; */
+    /* padding-bottom: 100px; */
+    align-items: center;
+    color: aliceblue;
+}
+.flex-layout-2 .item-one {
+    flex-basis: 240px;
+    background-image: url(http://www.airport.kg/images/subnav/about_main_1.jpg);
+    width: 25%;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #42423e;
+}
+.flex-layout-2 .item-two {
+    flex-basis: 240px;
+    background-image: url(http://www.airport.kg/images/subnav/passenger_1.jpg);
+    width: 25%;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #42423e;
+}
+.flex-layout-2 .item-three {
+    flex-basis: 240px;
+    background-image: url(http://www.airport.kg/images/subnav/service_1.jpg);
+    height: 230px;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #42423e;
+}
+.flex-layout-2 .item-four {
+    flex-basis: 240px;
+    background-image: url(http://www.airport.kg/images/subnav/press_1.jpg);
+    height: 230px;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #42423e;
 }
 .image {
     width: 100%;
     height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-image: url(https://unsplash.it/300/200?1);
-}
-
-.flex-layout-2 > .layout-two-product {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .box2 > .box2-image {
