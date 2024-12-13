@@ -472,7 +472,7 @@ body {
     justify-content: center;
     align-items: center;
     background-blend-mode: multiply;
-    background-color: white;
+    background-color: grey;
 }
 
 .box4 .item-two {
@@ -485,7 +485,7 @@ body {
     justify-content: center;
     align-items: center;
     background-blend-mode: multiply;
-    background-color: white;
+    background-color: grey;
 }
 
 .box4 .item-three {
@@ -498,7 +498,7 @@ body {
     justify-content: center;
     align-items: center;
     background-blend-mode: multiply;
-    background-color: white;
+    background-color: grey;
 }
 
 .box4 .item-four {
@@ -511,7 +511,7 @@ body {
     justify-content: center;
     align-items: center;
     background-blend-mode: multiply;
-    background-color: white;
+    background-color: grey;
 }
 
 .box4 .flex-layout-2 {
