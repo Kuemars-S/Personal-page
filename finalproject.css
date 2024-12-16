@@ -4,11 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    /* background-image: url(https://cdn.imgchest.com/files/j7mmcrexg76.png);
-    background-repeat: no-repeat; */
     max-width: 1170px;
     min-height: 1583px;
-    /* opacity: .5; */
     color: blue;
 }
 
@@ -472,7 +469,7 @@ body {
     justify-content: center;
     align-items: center;
     background-blend-mode: multiply;
-    background-color: grey;
+    background-color: white;
 }
 
 .box4 .item-two {
@@ -485,7 +482,7 @@ body {
     justify-content: center;
     align-items: center;
     background-blend-mode: multiply;
-    background-color: grey;
+    background-color: white;
 }
 
 .box4 .item-three {
@@ -498,7 +495,7 @@ body {
     justify-content: center;
     align-items: center;
     background-blend-mode: multiply;
-    background-color: grey;
+    background-color: white;
 }
 
 .box4 .item-four {
@@ -511,7 +508,7 @@ body {
     justify-content: center;
     align-items: center;
     background-blend-mode: multiply;
-    background-color: grey;
+    background-color: white;
 }
 
 .box4 .flex-layout-2 {
